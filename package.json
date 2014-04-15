@@ -1,0 +1,32 @@
+{
+  "name": "webinos-api-db",
+  "publishConfig": {
+    "tag": "alpha"
+  },
+  "description": "Database API",
+  "keywords": [
+    "webinos",
+    "database",
+    "API"
+  ],
+  "version": "0.0.1",
+  "homepage": "http://webinos.org/",
+  "author": "Christos Botsikas",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/webinos/webinos-api-db.git"
+  },
+  "bugs": {
+    "email": "webinos-wp4-ml@fokus.fraunhofer.de",
+    "url": ""
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/main.js",
+  "dependencies": {
+    "tingodb": "*"
+  },
+  "optionalDependencies": [],
+  "bundleDependencies": []
+}

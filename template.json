@@ -1,0 +1,89 @@
+{
+    "apiURI": {
+        "type": "text",
+        "className": ["hidden"],
+        "defaultValue": ""
+    },
+    "params": {
+        "type": "object",
+        "className": ["optional"],
+        "content": {
+            "instances": {
+                "type": "array",
+                "caption": "Database Services",
+                "content": {
+                    "id": {
+                        "type": "text",
+                        "className": ["hidden", "optional"],
+                        "defaultValue": ""
+                    },
+                    "params": {
+                        "type": "object",
+                        "className": ["optional"],
+                        "content": {
+                            "db": {
+                                "type": "text",
+                                "className": [""],
+                                "defaultValue": ""
+                            },
+                            "server": {
+                                "type": "object",
+                                "className": [""],
+                                "content": {
+                                    "engine": {
+                                        "type": "select",
+                                        "values": {
+                                            "Select DB engine:": [
+                                                {
+                                                    "value": "tingodb",
+                                                    "text": "TingoDB"
+                                                },
+                                                {
+                                                    "value": "mongodb",
+                                                    "text": "MongoDB"
+                                                }
+                                            ]
+                                        },
+                                        "defaultValue": "tingodb"
+                                    },
+                                    "path": {
+                                        "type": "text",
+                                        "className": ["optional"],
+                                        "defaultValue": ""
+                                    },
+                                    "host": {
+                                        "type": "text",
+                                        "className": ["optional"],
+                                        "defaultValue": ""
+                                    },
+                                    "port": {
+                                        "type": "text",
+                                        "className": ["optional"],
+                                        "defaultValue": ""
+                                    },
+                                    "opts": {
+                                        "type": "object",
+                                        "caption": "MongoDB Options",
+                                        "className": ["optional"],
+                                        "content": {
+                                            "auto_reconnect": {
+                                                "type": "text",
+                                                "className": ["optional"],
+                                                "defaultValue": ""
+                                            },
+                                            "safe": {
+                                                "type": "text",
+                                                "className": ["optional"],
+                                                "defaultValue": ""
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
